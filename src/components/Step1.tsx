@@ -13,12 +13,14 @@ const Step1 = ({ nextStep }: Step1Props) => {
   ];
 
   return (
-    <div className="w-[480px] mx-auto mt-8 text-center">
-      <h2 className="mb-8 text-[28px] font-semibold">Step # 1</h2>
-      <h2 className="mb-8 text-[28px] font-semibold">What is your monthly digital marketing budget?</h2>
+    <div className="w-[90%] md:w-[480px] mx-auto mt-8 text-center">
+      <h2 className="mb-4 md:mb-8 text-xl md:text-[28px] font-semibold">Step # 1</h2>
+      <h2 className="mb-4 md:mb-8 text-xl md:text-[28px] font-semibold">
+        What is your monthly digital marketing budget?
+      </h2>
       {budgetOptions.map((budget, index) => (
-        <div className="w-full mb-3" key={index}>
-          <button onClick={nextStep} className="w-full bg-white p-6">
+        <div className="w-full mb-3 text-sm md:text-base" key={index}>
+          <button onClick={nextStep} className="w-full bg-white p-3 xl:p-6">
             {budget}
           </button>
         </div>

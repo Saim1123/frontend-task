@@ -19,10 +19,10 @@ const Step2 = ({ nextStep, setUserData }: Step2Props) => {
   };
 
   return (
-    <div className="w-[520px] mx-auto mt-8 ">
-      <h2 className="mb-4 text-[28px] font-semibold text-center">Step # 2</h2>
-      <h2 className="mb-4 text-[28px] font-semibold text-center">Details</h2>
-      <p className="mb-4 text-[#6B7280] text-center">
+    <div className="w-[90%] md:w-[520px] mx-auto mt-8">
+      <h2 className="mb-2 md:mb-4 text-[28px] font-semibold text-center">Step # 2</h2>
+      <h2 className="mb-2 md:mb-4 text-[28px] font-semibold text-center">Details</h2>
+      <p className="mb-2 md:mb-4 text-[#6B7280] text-center">
         We&apos;re thrilled at the opportunity to help you grow your business online. Please let us know the best way to
         reach you.
       </p>
@@ -38,8 +38,8 @@ const Step2 = ({ nextStep, setUserData }: Step2Props) => {
             required
           />
         </div>
-        <div className="flex items-center gap-2 mb-2">
-          <div className="flex flex-col w-[50%]">
+        <div className="flex flex-col md:flex-row items-center gap-2 mb-2">
+          <div className="flex flex-col w-full md:w-[50%]">
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -50,7 +50,7 @@ const Step2 = ({ nextStep, setUserData }: Step2Props) => {
               required
             />
           </div>
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col w-full md:w-[50%]">
             <label htmlFor="number">Phone Number</label>
             <input
               type="text"

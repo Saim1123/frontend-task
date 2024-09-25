@@ -1,8 +1,8 @@
 const Step3 = () => {
   return (
-    <div className="w-[520px] mx-auto mt-10">
+    <div className="w-[90%] md:w-[520px] mx-auto mt-10">
       <div className="w-[104px] h-[104px] bg-gray-200 mx-auto border" />
-      <h1 className="text-3xl text-center w-[510px] mx-auto font-semibold my-6">
+      <h1 className="text-3xl text-center w-[90%] mx-auto font-semibold my-6">
         Your Request for a Proposal Has Been Submitted!
       </h1>
       <p className="text-[#6B7280] text-center my-6">
