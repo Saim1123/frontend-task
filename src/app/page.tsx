@@ -36,6 +36,8 @@ export default function Home() {
     setProgress(prevState => prevState - 33);
   };
 
+  console.log(userData);
+
   return (
     <Layout progress={progress} backStep={backStep}>
       {step === 1 && <Step1 nextStep={nextStep} />}
